@@ -1,16 +1,34 @@
 import type { Team } from './types'
-import TeamCard from './TeamCard'
-
+import TeamList from './TeamList'
 
 function App() {
-  let team1: Team = {
-      id : '1',
-      teamName : 'Dragons',
-      school : 'Drexel'
-  }
+  let empty: Team[] = [];
+
+  let teams : Team[] = [{
+    id: '1',
+    teamName: 'Dragons',
+    school: 'Drexel'
+  },{
+    id: '2',
+    teamName: 'Owls',
+    school: 'Temple'
+  },{
+    id: '3',
+    teamName: 'Quakers',
+    school: 'UPenn'
+  },{
+    id: '4',
+    teamName: 'Rams',
+    school: 'Thomas Jefferson'
+  },{
+    id: '5',
+    teamName: 'Nittany Lions',
+    school: 'Penn State'
+  }];
 
   return (
-    <TeamCard team={team1}/>
+    // <TeamList teams={empty} />
+    <TeamList teams={teams} />
   );
 }
 
