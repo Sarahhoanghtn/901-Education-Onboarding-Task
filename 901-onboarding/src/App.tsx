@@ -1,5 +1,6 @@
 import type { Team } from './types'
 import TeamList from './TeamList'
+import './getTeamStatus'
 
 function App() {
   let empty: Team[] = [];
